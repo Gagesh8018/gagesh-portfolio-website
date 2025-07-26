@@ -7,11 +7,10 @@
   min-height: 120vh;
   display: flex;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 150px;
   position: relative;
   z-index: 1;
-  margin-top: 20px;
+  height: 80vh;
 }
 
 /* Container with content shifted slightly upward */
@@ -27,6 +26,7 @@
   color: #ffffff;
   text-align: left;
   padding: 1rem;
+  margin-top: 200px;
 }
 
 .iam-text {
@@ -106,12 +106,12 @@
   align-items: center;
   padding: 1rem;
   animation: fadeInRight 2s ease-in-out both;
-
+  margin-top: 30px;
 }
 
 .profile-img {
   width: 450px;
-  height: 520px;
+  height: 550px;
   transition: transform 0.5s ease-in-out;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }

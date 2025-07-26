@@ -57,6 +57,7 @@ const About = () => {
         </Row>
 
         <Row>
+          <h3 className="text-center mb-4" style={{fontWeight: 'bold', fontSize: '2.5rem'}}>Skills</h3>
           <Col md={6}>
             {skillsLeft.map(renderSkillBar)}
           </Col>
