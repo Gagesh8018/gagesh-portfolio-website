@@ -1,0 +1,101 @@
+.services-section {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.services-title span {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid: 2 rows x 3 cols */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Design */
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Icon Style */
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #00ffff;
+  transition: color 0.3s;
+}
+
+.multi-icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.multi-icon .html {
+  color: #e44d26;
+}
+
+.multi-icon .css {
+  color: #264de4;
+}
+
+.multi-icon .js {
+  color: #f0db4f;
+}
+
+/* Text Styling */
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

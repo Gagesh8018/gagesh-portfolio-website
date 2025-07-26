@@ -1,0 +1,77 @@
+/* src/Components/Navbar.css */
+
+.custom-navbar {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.custom-border {
+  border: none;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+.nav-links .nav-link {
+  position: relative;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, #000000, #555555);
+  transition: width 0.4s ease;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.icons-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.icons-container a {
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons-container a:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}

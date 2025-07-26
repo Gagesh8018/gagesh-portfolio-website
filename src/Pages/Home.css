@@ -1,0 +1,179 @@
+/* Background and main layout */
+.home-section {
+  background-image: url('https://image.slidesdocs.com/responsive-images/slides/0-simple-blue-ink-resume-powerpoint-background_4718133207__960_540.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+/* Container with content shifted slightly upward */
+.home-content {
+  padding: 2rem 3rem;
+  position: relative;
+  top: -30px;
+  animation: fadeInUp 1.5s ease-in-out both;
+}
+
+/* Text section */
+.text-content {
+  color: #ffffff;
+  text-align: left;
+  padding: 1rem;
+}
+
+.iam-text {
+  font-size: 3.2rem;
+  color: #f0f0f0;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  animation: fadeIn 1s ease-in-out both;
+}
+
+.gradient-name {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.8rem;
+  animation: fadeIn 1.5s ease-in-out both;
+}
+
+.designation-typing {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: blue;
+  min-height: 40px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out both;
+}
+
+.cursor {
+  margin-left: 4px;
+  font-weight: bold;
+  color: #00ffff;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.intro {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  animation: fadeIn 2.3s ease-in-out both;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  animation: fadeIn 2.6s ease-in-out both;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00f7ff;
+  transform: scale(1.2);
+}
+
+/* Image section */
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  animation: fadeInRight 2s ease-in-out both;
+
+}
+
+.profile-img {
+  width: 450px;
+  height: 520px;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gradient-name {
+    font-size: 2rem;
+  }
+
+  .designation-typing {
+    font-size: 1.2rem;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .iam-text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,113 @@
+.portfolio-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+  position: relative;
+}
+
+.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #00d4ff;
+}
+
+/* Project */
+.projects-container {
+  margin-bottom: 60px;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.project-image {
+  max-width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.project-caption {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+/* Certifications */
+.certifications-container {
+  margin-top: 40px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cert-icon {
+  font-size: 3rem;
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.cert-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cert-link {
+  font-size: 0.95rem;
+  color: #00d4ff;
+  text-decoration: none;
+  border-bottom: 1px dashed #00d4ff;
+  transition: all 0.3s ease;
+}
+
+.cert-link:hover {
+  color: #fff;
+  border-color: #fff;
+}
